@@ -1,9 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>mesksr</title>
+  <title>Mesksr</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .jumbotron {
+      margin-bottom: 0px;
+      background-size: cover;
+      background-position: center;
+      color: #ffffff; /* The website will be dark bg */
+      text-shadow: 5px 5px 10px #000000;
+    }
+
+    .bg-intro {
+      background-image: url("images/iceland.png");
+      height: 100vh;
+    }
+
+    .bg-cisco {
+      background-image: url("images/wires.png");
+    }
+
+    .bg-ittiam {
+      background-image: url("images/ssp.png");
+    }
+
+    .bg-college {
+      background-image: url("images/desk.png");
+    }
+
+    /* To make all both col-sm-6 of same height */
+    .row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .row > [class*='col-'] {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* To have intro jumbotron vertically aligned */
+    .vertical-center {
+      min-height: 100%;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
-Will be up soon. :)
+  <div class="row">
+    <div class="jumbotron bg-intro col-md-12 vertical-center">
+      <div class="avatar">
+        <img src="images/mesksr.jpg" class="img-circle" alt="avatar">
+      </div>
+      <h1>Shubham Kumar Singh Rajput</h1>
+      <h2>Polyglot | Bibliophile | Cisco | India</h2>
+      <!-- To count the number of times the page was hit -->
+      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fmesksr.github.io&count_bg=%233DC8BC&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="jumbotron bg-cisco col-md-4">
+      <h1>Cisco</h1>
+      <h2>Sept 18 - Present</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="jumbotron bg-ittiam col-md-4">
+      <h1>Ittiam</h1>
+      <h2>June 18 - Sept 18</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="jumbotron bg-college col-md-4">
+      <h1>IIIT, Kalyani</h1>
+      <h2>2014 - 2018</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+  </div>
+
 </body>
 </html>
